@@ -566,103 +566,189 @@
     </div>
   </section>
 
-  <!-- ================= FORMULÁRIO DE RESERVA E CONTATO ================= -->
-  <section id="reserva" class="py-12 bg-slate-100 scroll-mt-16">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- ================= FORMULÁRIO DE RESERVA — LAYOUT PROFISSIONAL SPLIT ================= -->
+  <section id="reserva" class="py-16 bg-gradient-to-br from-mec-navyDark via-mec-navy to-mec-blue scroll-mt-16 relative overflow-hidden">
+    
+    <!-- Elementos decorativos sutis de fundo -->
+    <div class="absolute top-0 right-0 w-72 h-72 bg-mec-amber/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/[0.03] rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
-      <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-sm">
-        
-        <div class="text-center max-w-xl mx-auto mb-8 space-y-1">
-          <span class="text-xs font-mono font-bold uppercase text-mec-navy tracking-widest">
-            CANAL CORPORATIVO EXCLUSIVO
-          </span>
-          <h3 class="text-2xl font-black text-slate-900 tracking-tight">
-            Garanta a Prioridade de Lançamento
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+        <!-- ====== LADO ESQUERDO: Proposta de Valor + Social Proof ====== -->
+        <div class="space-y-7 text-white">
+          
+          <div>
+            <span class="inline-flex items-center gap-1.5 text-[11px] font-mono font-bold uppercase tracking-widest text-mec-amber bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
+              <i data-lucide="lock" class="w-3 h-3"></i>
+              CANAL CORPORATIVO EXCLUSIVO
+            </span>
+          </div>
+          
+          <h3 class="text-2xl sm:text-3xl lg:text-[2.1rem] font-black tracking-tight leading-tight">
+            Garanta a Prioridade<br>de Lançamento
           </h3>
-          <p class="text-xs text-slate-500">
-            Preencha seus dados corporativos para receber o dossiê executivo com a planta baixa dos estandes e valores 2027.
+          
+          <p class="text-sm text-slate-300 leading-relaxed max-w-md">
+            Preencha seus dados corporativos para receber o dossiê executivo com a planta baixa dos estandes e valores 2027. Parceiros do folder físico têm prioridade de localização.
           </p>
+
+          <!-- Benefícios com ícones -->
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-mec-amber/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-4 h-4 text-mec-amber"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Escolha prioritária de localização</h4>
+                <p class="text-xs text-slate-400">Acesso antecipado à planta 3D para selecionar o estande ideal antes da abertura geral.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-mec-amber/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="file-text" class="w-4 h-4 text-mec-amber"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Dossiê executivo completo</h4>
+                <p class="text-xs text-slate-400">Relatório com métricas de impacto, perfil dos alunos e comparativo de cotas em formato profissional.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-mec-amber/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="shield-check" class="w-4 h-4 text-mec-amber"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Consultoria personalizada</h4>
+                <p class="text-xs text-slate-400">Um consultor dedicado para montar a proposta ideal para suas metas de employer branding e recrutamento.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Proof / Trust -->
+          <div class="flex items-center gap-4 pt-3 border-t border-white/10">
+            <div class="flex -space-x-2">
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-mec-amber to-amber-500 flex items-center justify-center text-[10px] font-black text-white ring-2 ring-mec-navy">G</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-[10px] font-black text-white ring-2 ring-mec-navy">V</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-[10px] font-black text-white ring-2 ring-mec-navy">S</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-[10px] font-black text-white ring-2 ring-mec-navy">A</div>
+            </div>
+            <p class="text-[11px] text-slate-400">
+              <strong class="text-slate-200">34 marcas líderes</strong> já participaram das edições anteriores
+            </p>
+          </div>
+
         </div>
 
-        <form id="leadForm" onsubmit="enviarLead(event)" class="space-y-4 max-w-xl mx-auto">
+        <!-- ====== LADO DIREITO: Formulário Compacto ====== -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-2xl shadow-black/20 border border-white/20">
           
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div>
-              <label for="f_nome" class="block text-xs font-bold text-slate-700 mb-1">Seu Nome *</label>
-              <input 
-                type="text" 
-                id="f_nome" 
-                required 
-                placeholder="Ex: Carlos Silva" 
-                class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:border-mec-navy focus:bg-white focus:ring-1 focus:ring-mec-navy"
-              />
+          <div class="mb-6">
+            <h4 class="text-lg font-extrabold text-slate-900">Solicitar Apresentação Comercial</h4>
+            <p class="text-xs text-slate-500 mt-1">Resposta em até 2h úteis via WhatsApp corporativo.</p>
+          </div>
+
+          <form id="leadForm" onsubmit="enviarLead(event)" class="space-y-3.5">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="f_nome" class="block text-[11px] font-bold text-slate-600 mb-1 uppercase tracking-wide">Seu Nome</label>
+                <input 
+                  type="text" 
+                  id="f_nome" 
+                  required 
+                  placeholder="Carlos Silva" 
+                  class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-mec-navy focus:bg-white focus:ring-2 focus:ring-mec-navy/20 transition-all placeholder:text-slate-400"
+                />
+              </div>
+
+              <div>
+                <label for="f_empresa" class="block text-[11px] font-bold text-slate-600 mb-1 uppercase tracking-wide">Empresa</label>
+                <input 
+                  type="text" 
+                  id="f_empresa" 
+                  required 
+                  placeholder="Google, Vale, Stellantis..." 
+                  class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-mec-navy focus:bg-white focus:ring-2 focus:ring-mec-navy/20 transition-all placeholder:text-slate-400"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="f_email" class="block text-[11px] font-bold text-slate-600 mb-1 uppercase tracking-wide">E-mail Corporativo</label>
+                <input 
+                  type="email" 
+                  id="f_email" 
+                  required 
+                  placeholder="carlos@empresa.com.br" 
+                  class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-mec-navy focus:bg-white focus:ring-2 focus:ring-mec-navy/20 transition-all placeholder:text-slate-400"
+                />
+              </div>
+
+              <div>
+                <label for="f_tel" class="block text-[11px] font-bold text-slate-600 mb-1 uppercase tracking-wide">WhatsApp com DDD</label>
+                <input 
+                  type="tel" 
+                  id="f_tel" 
+                  required 
+                  placeholder="(31) 99999-9999" 
+                  class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-mec-navy focus:bg-white focus:ring-2 focus:ring-mec-navy/20 transition-all placeholder:text-slate-400"
+                />
+              </div>
             </div>
 
             <div>
-              <label for="f_empresa" class="block text-xs font-bold text-slate-700 mb-1">Empresa *</label>
-              <input 
-                type="text" 
-                id="f_empresa" 
-                required 
-                placeholder="Ex: Google, Vale, Stellantis..." 
-                class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:border-mec-navy focus:bg-white focus:ring-1 focus:ring-mec-navy"
-              />
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div>
-              <label for="f_email" class="block text-xs font-bold text-slate-700 mb-1">E-mail Corporativo *</label>
-              <input 
-                type="email" 
-                id="f_email" 
-                required 
-                placeholder="carlos@empresa.com.br" 
-                class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:border-mec-navy focus:bg-white focus:ring-1 focus:ring-mec-navy"
-              />
+              <label for="f_cota" class="block text-[11px] font-bold text-slate-600 mb-1 uppercase tracking-wide">Cota de Interesse</label>
+              <select 
+                id="f_cota" 
+                class="w-full px-3.5 py-2.5 text-sm rounded-xl bg-slate-50 border border-slate-200 font-semibold text-mec-navy focus:outline-none focus:border-mec-navy focus:bg-white focus:ring-2 focus:ring-mec-navy/20 transition-all appearance-none"
+                style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23024c76%22 stroke-width=%222.5%22><polyline points=%226 9 12 15 18 9%22/></svg>'); background-repeat: no-repeat; background-position: right 12px center;"
+              >
+                <option value="Bronze">Cota Bronze — 6 m² (2m × 3m)</option>
+                <option value="Prata">Cota Prata — 10 m² (2m × 5m)</option>
+                <option value="Ouro" selected>Cota Ouro — 12 m² · Mais Procurada</option>
+                <option value="Diamante">Cota Diamante — Ilha 360° · 25 m² VIP</option>
+              </select>
             </div>
 
-            <div>
-              <label for="f_tel" class="block text-xs font-bold text-slate-700 mb-1">WhatsApp com DDD *</label>
-              <input 
-                type="tel" 
-                id="f_tel" 
-                required 
-                placeholder="(31) 99999-9999" 
-                class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-50 border border-slate-300 focus:outline-none focus:border-mec-navy focus:bg-white focus:ring-1 focus:ring-mec-navy"
-              />
+            <div class="pt-1.5">
+              <button 
+                type="submit" 
+                id="btn_submit"
+                class="w-full py-3.5 px-4 rounded-xl bg-mec-navy hover:bg-mec-navyDark text-white font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-xl group"
+              >
+                <span>Solicitar Apresentação Comercial</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform"></i>
+              </button>
             </div>
-          </div>
 
-          <div>
-            <label for="f_cota" class="block text-xs font-bold text-slate-700 mb-1">Cota Selecionada</label>
-            <select 
-              id="f_cota" 
-              class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-50 border border-slate-300 font-bold text-mec-navy focus:outline-none focus:border-mec-navy focus:bg-white"
-            >
-              <option value="Bronze">Cota Bronze (2m × 3m · 6 m²)</option>
-              <option value="Prata">Cota Prata (2m × 5m · 10 m²)</option>
-              <option value="Ouro" selected>Cota Ouro (2m × 6m · Mais Procurada)</option>
-              <option value="Diamante">Cota Diamante (Ilha 360° 25 m² · Master VIP)</option>
-            </select>
-          </div>
+            <div id="form_ok" class="hidden p-3 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs text-center font-medium">
+              ✅ Solicitação recebida! Abrindo o WhatsApp oficial da coordenação para confirmação em tempo real...
+            </div>
 
-          <div class="pt-2">
-            <button 
-              type="submit" 
-              id="btn_submit"
-              class="w-full py-3.5 px-4 rounded-xl bg-mec-navy hover:bg-mec-navyDark text-white font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md"
-            >
-              <span>Solicitar Apresentação Comercial & Reserva</span>
-              <i data-lucide="send" class="w-4 h-4"></i>
-            </button>
-          </div>
+            <!-- Micro trust -->
+            <div class="flex items-center justify-center gap-3 pt-1.5 text-[10px] text-slate-400">
+              <span class="flex items-center gap-1">
+                <i data-lucide="shield" class="w-3 h-3"></i>
+                Dados protegidos
+              </span>
+              <span class="w-0.5 h-3 bg-slate-200"></span>
+              <span class="flex items-center gap-1">
+                <i data-lucide="clock" class="w-3 h-3"></i>
+                Resposta em até 2h
+              </span>
+              <span class="w-0.5 h-3 bg-slate-200"></span>
+              <span class="flex items-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                Via WhatsApp
+              </span>
+            </div>
 
-          <div id="form_ok" class="hidden p-3 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs text-center font-medium">
-            ✅ Solicitação recebida! Abrindo o WhatsApp oficial da coordenação para confirmação em tempo real...
-          </div>
+          </form>
 
-        </form>
+        </div>
 
       </div>
 
